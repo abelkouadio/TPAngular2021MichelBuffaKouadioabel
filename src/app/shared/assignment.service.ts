@@ -30,8 +30,10 @@ export class AssignmentService {
   ];
   constructor(private http:HttpClient,private LoggingService : LoggingService) { }
 
-
+  //l'ancien lien vers le localhost
+  //url = "http://localhost:8010/api/assignments"
   url = "https://apiangular2021.herokuapp.com/api/assignments"
+
   getAssignments(): Observable<Assignment[]>
   {
     console.log('Dans getAssignmens dans le service...');
